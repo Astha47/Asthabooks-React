@@ -1,0 +1,68 @@
+/*Global setting*/
+.BooksSection{
+    height: 600px;
+    background-color: aliceblue;
+    display: flex;
+}
+
+
+.HeroBookL{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    background-color: chartreuse;
+    display: flex;
+}
+
+.HeroBookR{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    background-color: chartreuse;
+    display: flex;
+}
+
+.HeroBookContainer{
+    padding: 30px 70px;
+    margin: auto;
+}
+
+.BookListSection{
+    width: calc(100vw - 700px);
+    background-color: brown;
+}
+
+.ListTitle{
+    color: white;
+    font-size: 25pt;
+    font-weight: 600;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+.ListDescription{
+    color: white;
+    font-size: 13pt;
+    height: fit-content;
+}
+
+.BooklistContainer{
+    height: 75%;
+    background-image: linear-gradient(to bottom,#080146,#080146,#080146,#03001d);
+}
+
+.MoreBookButtonContainer{
+    display: flex;
+    font-size: 15pt;
+    font-weight: 600;
+    height: 25%;
+    background-color: #03001d;
+}
+
+.BookButton{
+    margin: auto;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: white;
+}

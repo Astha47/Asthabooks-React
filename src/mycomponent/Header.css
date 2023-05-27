@@ -1,0 +1,177 @@
+/*Main Header*/
+.MainHeader{
+    height: 170px;
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+}
+
+.Header{
+    height: 120px;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(20, 20, 49),rgb(20, 20, 49), rgb(7, 7, 17));
+    backdrop-filter: blur(8px);
+}
+
+.menubar{
+    height: 50px;
+    display: flex;
+    background-color: rgb(34, 34, 77);
+    backdrop-filter: blur(8px);
+}
+
+/*Logo Section*/
+.LogoContainer{
+    height: 100%;
+    width: 300px;
+    display: flex;
+}
+
+.LogoContainer img{
+    width: auto;
+    height: 45%;
+    margin: auto;
+}
+
+/*Search Box Section*/
+.searchboxsection{
+    width: 900px;
+    height: 100%;
+    
+    display: flex;
+}
+
+.searchcontainer{
+    margin: auto;
+    width: 700px;
+    height: 55px;
+    background-color: rgb(39, 29, 56);
+    border-radius: 40px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(54, 54, 90);
+    display: flex;
+    overflow: hidden;
+}
+
+.searchbox{
+    width: calc(100% - 100px);
+    height: 100%;
+    display: flex;
+}
+
+.searchbox input{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size:larger;
+
+}
+
+.searchlogo{
+    width: 100px;
+    height: 100%;
+    background-color: rgb(20, 43, 64);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+}
+
+.searchlogo:hover{
+    background-color: rgb(27, 53, 78);
+    transition: all 0.2s ease-in-out;
+}
+
+.searchlogocontainer{
+    height: 70%;
+    width: auto;
+    margin: auto;
+}
+
+/*NavBar Section*/
+.NavigationBar{
+    width: calc(100vw - 1400px);
+    min-width: 240px;
+    height: 100%;
+    display: flex;
+}
+
+.NavContainer{
+    margin: auto;
+    margin-right: 10px;
+    display: flex;
+    position: relative;
+    width: calc(60 * 4px);
+    height: 55px;
+}
+
+.Tab{
+    width: 60px;
+    height: 100%;
+    display: flex;
+}
+
+.navbutton{
+    margin: auto;
+    height: 70%;
+    transition:all 0.2s ease-in;
+    fill-rule: evenodd;
+}
+
+.navbutton:hover{
+    fill:white;
+    transition:all 0.2s ease-in;
+    fill-rule: nonzero;
+}
+
+/*User Account section*/
+
+.useraccount{
+    height: 100%;
+    width: 200px;
+    display: flex;
+}
+
+.accountcontainer{
+    height: 50px;
+    width: 140px;
+    border: solid;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    margin:auto;
+    border-radius: 40px;
+}
+
+/* Navigation Bar*/
+
+.mbcategory{
+    height: 100%;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+.mbtab{
+    height: 100%;
+    display: flex;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+.mbtab p{
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    transition: all 0.2s ease-in;
+}
+
+.mbtab:hover{
+    background-color: aliceblue;
+    color: rgb(20, 20, 49);
+    transition: all 0.2s ease-in;
+}

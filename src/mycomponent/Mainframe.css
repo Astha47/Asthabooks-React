@@ -1,0 +1,10 @@
+/* Global Mainframe */
+
+.Mainframe{
+    margin-top: 170px;
+    min-height: calc(100vh - 170px);
+    width: 100vw;
+    overflow: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

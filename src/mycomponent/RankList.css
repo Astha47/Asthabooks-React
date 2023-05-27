@@ -1,0 +1,81 @@
+.RankItem{
+    display: flex;
+    height: 70px;
+    color: white;
+    font-weight: 600;
+    font-size: 18pt;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.RankItem:hover{
+    filter: brightness(130%);
+    transition: all 0.2s ease-in-out;
+}
+
+.RLTierContainer{
+    width: 90px;
+    height: 100%;
+    background-color: rgb(84, 84, 84);
+    display: flex;
+}
+
+.RLTitleContainer{
+    height: 100%;
+    width: calc(100% - 90px - 40px);
+    display: flex;
+}
+
+.RLTierContainer1{
+    width: 90px;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #ffd700, #4b4001);
+    display: flex;
+}
+
+.RLTitleContainer1{
+    height: 100%;
+    width: calc(100% - 90px - 40px);
+    display: flex;
+}
+
+.RLTierContainer2{
+    width: 90px;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #c0c0c0, #3b3b3b);
+    display: flex;
+}
+
+.RLTitleContainer2{
+    height: 100%;
+    width: calc(100% - 90px - 40px);
+    display: flex;
+}
+
+.RLTierContainer3{
+    width: 90px;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #cd7f32, #5d3916);
+    display: flex;
+}
+
+.RLTitleContainer3{
+    height: 100%;
+    width: calc(100% - 90px - 40px);
+    display: flex;
+}
+
+.RLTier{
+    margin: auto;
+}
+
+.RLTitle{
+    margin: auto;
+    margin-left: 20px;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+

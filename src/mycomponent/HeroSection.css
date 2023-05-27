@@ -1,0 +1,144 @@
+/* Main Section */
+.HeroSection{
+    display: flex;
+    height: 600px;
+    width: 100vw;
+}
+
+/* Lastest Update Section */
+.LastestUpdate{
+    height: calc(100% - 100px);
+    width: calc(70vw);
+    padding: 50px;
+    padding-left: 70px;
+    display: flex;
+}
+
+.LUDesc{
+    width: 500px;
+    height: 100%;
+    color: white;
+}
+
+.LUHeader{
+    text-align: left;
+    font-size: 20pt;
+    margin-top: 30px;
+}
+
+.LUTitle{
+    text-align: left;
+    font-size: 30pt;
+    margin-top: 20px;
+}
+
+.LUTextContainer{
+    height: 250px;
+    overflow: auto;
+}
+
+.LUTextContainer::-webkit-scrollbar {
+    width: 7px;
+  }
+
+.LUTextContainer::-webkit-scrollbar-thumb {
+    background-color: #c9c6f2;
+    border-radius: 4px;
+}
+
+.LUTextContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff;
+}
+
+.LUText{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.LUButton{
+    width: fit-content;
+    bottom: 0px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px; 
+    border-radius: 20px;
+    transition: all 0.2s ease-in;
+}
+
+.LUButton:hover{
+    background-color: black;
+    color: #ffffff;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.LUImg{
+    width: calc(100% - 500px);
+    height: 100%;
+    display: flex;
+}
+
+.LUCard{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    display: block;
+}
+
+.LUImgContainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.LUCard img{
+    height: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.LUNewLabel{
+    position: relative;
+    left: 100px;
+    width: 100px;
+    height: fit-content;
+    top: -425px;
+    left: 200px;
+    background-color: chartreuse;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+/* Recommencation Section */
+.Recommendation{
+    height: calc(100% - 100px);
+    width: 30vw;
+    min-width: 400px;
+    background-color: rgb(9, 1, 18);
+    padding: 50px;
+    display: block;
+}
+
+.RecHeader{
+    color: #ffffff;
+    font-size: 20pt;
+    font-weight: 600;
+    height: 70px;
+}
+
+.RecommendationList{
+    width: 100%;
+    height: fit-content;
+    height: 380px;
+    overflow: auto;
+}
+
+.RecommendationList::-webkit-scrollbar {
+    width: 7px;
+}
+
+.RecommendationList::-webkit-scrollbar-thumb {
+    background-color: #c9c6f2;
+    border-radius: 4px;
+}
