@@ -27,10 +27,10 @@ const BooksSection = ({ title, description, bgtitle, colorscheme, type }) => {
         </div>
         <div className="BookListSection">
             <div className="BooklistContainer">
-            <div className="BookList"></div>
+                <div className="BookList"></div>
             </div>
             <div className="MoreBookButtonContainer">
-            <div className="BookButton">More</div>
+                <div className="BookButton">More</div>
             </div>
         </div>
         <div className="HeroBookL" style={RightHeroStyle}>
