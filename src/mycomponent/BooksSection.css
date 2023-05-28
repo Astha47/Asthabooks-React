@@ -49,6 +49,36 @@
 .BooklistContainer{
     height: 75%;
     background-image: linear-gradient(to bottom,#080146,#080146,#080146,#03001d);
+    display: flex;
+}
+
+.BooksCardContainer{
+    margin: auto;
+    width: 800px;
+    height: 350px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(235, 235, 235);
+    overflow: hidden;
+    display: flex;
+    border-width: 3px;
+}
+
+.CardCell{
+    width: 25%;
+    height:100%;
+    background-color: yellow;
+    border-color: rgb(235, 235, 235);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.CardBookCover{
+    background-color: brown;
+    width: 100%;
+    height: 80%;
+    background-size: cover;
 }
 
 .MoreBookButtonContainer{
@@ -61,8 +91,26 @@
 
 .BookButton{
     margin: auto;
+    margin-top: 10px;
     width: fit-content;
     padding: 10px 30px;
     border-radius: 20px;
     background-color: white;
+}
+
+.BookCardContainer{
+    width: 1500px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+.CardTitleContainer{
+    height: 20%;
+    display: flex;
+    background-color: #170d73;
+    color: white;
+}
+
+.CardTitle{
+    margin: auto;
 }

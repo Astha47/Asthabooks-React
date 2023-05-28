@@ -34,7 +34,9 @@ const RankList = ({ rank, judul, bg }) => {
         <div className="RLTier">{rank}</div>
       </div>
       <div className={TitleContainerClass} style={divStyle}>
-        <div className="RLTitle">{judul}</div>
+        <div className='RLTitleDark'>
+          <div className="RLTitle">{judul}</div>
+        </div>
       </div>
     </div>
   );
