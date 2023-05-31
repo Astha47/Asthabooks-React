@@ -171,3 +171,40 @@
         min-width: 400px;
     }
 }
+
+@media (max-width: 1005px){
+    .HeroSection {
+        display: block;
+        height: 1200px;
+    }
+    .LastestUpdate{
+        height: 500px;
+        width: calc(100vw - 14vw);
+        padding: 7vw;
+    }
+    .Recommendation{
+        height: 600px;
+        width: 100vw;
+        padding: 0;
+    }
+    .RecommendationList{
+        width: 80%;
+        margin: auto;
+    }
+
+    .LUDesc{
+        min-width: 0;
+        width: 100%;
+    }
+
+    .LUImg{
+        display: none;
+    }
+    .RecHeader{
+        font-size: 18pt;
+        padding-top: 60px;
+    }
+    .RLTitle{
+        font-size: 14pt;
+    }
+}

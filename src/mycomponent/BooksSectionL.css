@@ -147,3 +147,9 @@
         height: 700px;
     }
 }
+
+@media (max-width: 850px){
+    .BooksCardContainer{
+        width: 90%;
+    }
+}
