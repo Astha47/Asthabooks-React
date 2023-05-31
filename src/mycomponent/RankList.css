@@ -86,3 +86,18 @@
     background-image: url('../img/shadebanner.png');
     background-size: cover;
 }
+
+@media (max-width: 1500px){
+    .RLTitleContainer{
+        width: calc(100% - 90px);
+    }
+    .RLTitleContainer1{
+        width: calc(100% - 90px);
+    }
+    .RLTitleContainer2{
+        width: calc(100% - 90px);
+    }
+    .RLTitleContainer3{
+        width: calc(100% - 90px);
+    }
+}

@@ -142,3 +142,22 @@
     background-color: #c9c6f2;
     border-radius: 4px;
 }
+
+@media (max-width: 1500px){
+    .HeroSection {
+        display: block;
+        height: 1200px;
+    }
+    .LastestUpdate{
+        height: 500px;
+        width: calc(100vw - 120px);
+    }
+    .Recommendation{
+        height: 500px;
+        width: calc(100vw - 100px);
+    }
+    .RecommendationList{
+        width: 500px;
+        margin: auto;
+    }
+}

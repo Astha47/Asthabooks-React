@@ -1,7 +1,6 @@
 /*Global setting*/
 .BooksSection{
     height: 600px;
-    background-color: aliceblue;
     display: flex;
 }
 
@@ -10,17 +9,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 700px;
-    background-color: chartreuse;
     display: flex;
 }
 
-.HeroBookR{
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 700px;
-    background-color: chartreuse;
-    display: flex;
-}
 
 .HeroBookContainer{
     padding: 30px 70px;
@@ -29,7 +20,6 @@
 
 .BookListSection{
     width: calc(100vw - 700px);
-    background-color: brown;
 }
 
 .ListTitle{
@@ -56,7 +46,6 @@
     margin: auto;
     width: 800px;
     height: 350px;
-    background-color: white;
     border-style: solid;
     border-radius: 20px;
     border-color: rgb(235, 235, 235);
@@ -83,7 +72,6 @@
 }
 
 .CardBookCover{
-    background-color: brown;
     width: 100%;
     height: 80%;
     background-size: cover;
@@ -144,4 +132,17 @@
     margin: auto;
 }
 
-  
+@media (max-width: 1644px){
+    .BooksSection{
+        display: block;
+        height: 1200px;
+    }
+    .HeroBookL{
+        width: 100vw;
+        height: 500px;
+    }
+    .BookListSection{
+        width: 100vw;
+        height: 700px;
+    }
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import './BooksSection.css';
+import './BooksSectionL.css';
 
 
-const BooksSection = ({ title, description, bgtitle, colorscheme, type, booksarray }) => {
+const BooksSectionL = ({ title, description, bgtitle, colorscheme, booksarray }) => {
 
     let book1 = './img/' + booksarray[0][1];
     let book2 = './img/' + booksarray[1][1];
@@ -11,19 +11,7 @@ const BooksSection = ({ title, description, bgtitle, colorscheme, type, booksarr
 
     let LeftHeroStyle = {
         backgroundImage: `url(${bgtitle})`,
-
-        
     };
-
-    let RightHeroStyle = {
-        backgroundImage: `url(${bgtitle})`,
-    };
-
-    if (type === 'left') {
-        RightHeroStyle.display = 'none';
-    } else {
-        LeftHeroStyle.display = 'none';
-    }
 
     return (
         <div className="BooksSection">
@@ -76,14 +64,8 @@ const BooksSection = ({ title, description, bgtitle, colorscheme, type, booksarr
                 <div className="BookButton">More</div>
             </div>
         </div>
-        <div className="HeroBookL" style={RightHeroStyle}>
-            <div className="HeroBookContainer">
-                <div className="ListTitle">{title}</div>
-                <div className="ListDescription">{description}</div>
-            </div>
-        </div>
         </div>
     );
 };
 
-export default BooksSection;
+export default BooksSectionL;

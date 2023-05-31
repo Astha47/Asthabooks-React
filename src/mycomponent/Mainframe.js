@@ -1,7 +1,7 @@
 import './Mainframe.css'
 import BarierBlock from './BarierBlock';
 import HeroSection from './HeroSection';
-import BooksSection from './BooksSection';
+import BooksSectionL from './BooksSectionL';
 import React from 'react';
 
 function Mainframe() {
@@ -14,11 +14,12 @@ function Mainframe() {
             <BarierBlock/>
             <HeroSection/>
             <BarierBlock/>
-            <BooksSection title={sections[0][0]} description={sections[0][1]} bgtitle='./img/sectionbg/science.jpg' type='left' booksarray={bukusains}/>
+            <BooksSectionL title={sections[0][0]} description={sections[0][1]} bgtitle='./img/sectionbg/science.jpg' booksarray={bukusains}/>
             <BarierBlock/>
-            <BooksSection title={sections[1][0]} description={sections[1][1]} bgtitle='./img/sectionbg/fiction.jpg' type='right' booksarray={bukusains}/>
         </div>
      );
 }
 
 export default Mainframe;
+
+/*<BooksSection title={sections[1][0]} description={sections[1][1]} bgtitle='./img/sectionbg/fiction.jpg' type='right' booksarray={bukusains}/> */
