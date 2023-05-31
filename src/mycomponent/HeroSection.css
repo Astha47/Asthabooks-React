@@ -160,4 +160,14 @@
         width: 500px;
         margin: auto;
     }
+
+    .LUDesc{
+        min-width: 500px;
+        width: 50%;
+    }
+
+    .LUImg{
+        width: 50%;
+        min-width: 400px;
+    }
 }
