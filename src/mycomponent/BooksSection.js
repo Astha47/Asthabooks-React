@@ -34,27 +34,35 @@ const BooksSection = ({ title, description, bgtitle, colorscheme, type, booksarr
             <div className="BooklistContainer">
                 <div className="BooksCardContainer">
                     <div className="CardCell">
-                        <div className="CardBookCover" style={{ backgroundImage: `url(${book1})` }}></div>
+                        <div className="CardBookCover" style={{ backgroundImage: `url(${book1})` }}>
+                            <img src={book1} alt="book1" />
+                        </div>
                         <div className="CardTitleContainer">
                             <div className="CardTitle">{booksarray[0][0]}</div>
                         </div>
                     </div>
 
                     <div className="CardCell">
-                        <div className="CardBookCover" style={{ backgroundImage: `url(${book2})` }}></div>
+                        <div className="CardBookCover" style={{ backgroundImage: `url(${book2})` }}>
+                        <img src={book2} alt="book2" />
+                        </div>
                         <div className="CardTitleContainer">
                             <div className="CardTitle">{booksarray[1][0]}</div>
                         </div>
                     </div>
 
                     <div className="CardCell">
-                        <div className="CardBookCover" style={{ backgroundImage: `url(${book3})` }}></div>
+                        <div className="CardBookCover" style={{ backgroundImage: `url(${book3})` }}>
+                        <img src={book3} alt="book3" />
+                        </div>
                         <div className="CardTitleContainer">
                             <div className="CardTitle">{booksarray[2][0]}</div>
                         </div>
                     </div>
                     <div className="CardCell">
-                        <div className="CardBookCover" style={{ backgroundImage: `url(${book4})` }}></div>
+                        <div className="CardBookCover" style={{ backgroundImage: `url(${book4})` }}>
+                        <img src={book4} alt="book4" />
+                        </div>
                         <div className="CardTitleContainer">
                             <div className="CardTitle">{booksarray[3][0]}</div>
                         </div>

@@ -79,6 +79,19 @@
     width: 100%;
     height: 80%;
     background-size: cover;
+    overflow: hidden;
+}
+
+.CardBookCover img{
+    width: 120%;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.CardBookCover img:hover{
+    width: 125%;
+    height: auto;
+    transition: all 0.2s ease-in-out;
 }
 
 .MoreBookButtonContainer{
