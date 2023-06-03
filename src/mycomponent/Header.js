@@ -7,7 +7,7 @@ import NotificationIcon from '../img/notificationicon';
 import AboutIcon from '../img/abouticon';
 import CollectionIcon from '../img/collectionicon';
 
-function Header() {
+function Header({ activeTab, onTabChange }) {
     const LightColor = '#FFFFFF'
     return (
         <div className='MainHeader'>
@@ -32,8 +32,8 @@ function Header() {
                 <div className="NavigationBar">
                     <div className='NavContainer'>
                         <div className='Tab'>
-                            <div className='navbutton'>
-                            <HomeIcon height='100%' width='auto' stroke={LightColor} margin='auto'/>
+                            <div className='navbutton' onClick={() => onTabChange('Home')}>
+                            <HomeIcon height='100%' width='auto' stroke={LightColor} fill={activeTab === 'Home' ? LightColor : ''} margin='auto'/>
                             </div>
                         </div>
                         <div className='Tab'>
@@ -63,22 +63,22 @@ function Header() {
             </div>
             <div className='menubar'>
                 <div className='mbcategory'>
-                    <div className='mbtab'>
+                    <div className={activeTab === 'AllBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('AllBooks')}>
                         <p>All Books</p>    
                     </div>
-                    <div className='mbtab'>
+                    <div className={activeTab === 'CollegeBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('CollegeBooks')}>
                         <p>College Books</p>
                     </div>
-                    <div className='mbtab'>
+                    <div className={activeTab === 'SelfImprovement' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('SelfImprovement')}>
                         <p>Self Improvement</p>
                     </div>
-                    <div className='mbtab'>
+                    <div className={activeTab === 'Novel' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('Novel')}>
                         <p>Novel</p>
                     </div>
-                    <div className='mbtab'>
+                    <div className={activeTab === 'TulisanNala' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('TulisanNala')}>
                         <p>Tulisan Nala</p>
                     </div>
-                    <div className='mbtab'>
+                    <div className={activeTab === 'Asthaproject' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('Asthaproject')}>
                         <p>Asthaproject</p>
                     </div>
                 </div>

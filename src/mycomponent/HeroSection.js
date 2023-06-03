@@ -5,9 +5,18 @@ import TopBG from '../img/LastestUpdateBG/TopBG.jpg';
 import Cover from '../img/cover/Oscillation.jpg';
 import RankList from "./RankList";
 
-const TierList = [['Oscillation - Leandika', 'Oscillation.jpg'],['Fundamentals of Physics', 'Halliday.png'],['Rich Dad Poor Dad', 'RichDad.jpg'],['The 48 Laws of Power', 'Power.jpg'],['Synthetic Memories', 'SyntheticMemories.jpg']];
+const TierList = [
+    ['Oscillation - Leandika', 'Oscillation.jpg'],
+    ['Fundamentals of Physics', 'Halliday.png'],
+    ['Rich Dad Poor Dad', 'RichDad.jpg'],['The 48 Laws of Power', 'Power.jpg'],
+    ['Synthetic Memories', 'SyntheticMemories.jpg'],
+    ['Synthetic Memories', 'SyntheticMemories.jpg']
+];
 
-function HeroSection() {
+
+
+function HeroSection(TierLists) {
+
     const VarStyle = {
         backgroundImage: `url(${BackgroundImage})`,
         backgroundSize: 'cover',

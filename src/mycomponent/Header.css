@@ -113,6 +113,7 @@
     width: 60px;
     height: 100%;
     display: flex;
+    cursor: pointer;
 }
 
 .navbutton{
@@ -171,8 +172,25 @@
     transition: all 0.2s ease-in;
 }
 
+.mbtabActive p{
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    transition: all 0.2s ease-in;
+}
+
 .mbtab:hover{
     background-color: aliceblue;
     color: rgb(20, 20, 49);
+    transition: all 0.2s ease-in;
+}
+
+.mbtabActive{
+    background-color: aliceblue;
+    color: rgb(20, 20, 49);
+    height: 100%;
+    display: flex;
+    cursor: pointer;
     transition: all 0.2s ease-in;
 }
