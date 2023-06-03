@@ -78,9 +78,6 @@ function Header({ activeTab, onTabChange }) {
                     <div className={activeTab === 'TulisanNala' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('TulisanNala')}>
                         <p>Tulisan Nala</p>
                     </div>
-                    <div className={activeTab === 'Asthaproject' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('Asthaproject')}>
-                        <p>Asthaproject</p>
-                    </div>
                 </div>
             </div>
         </div> 

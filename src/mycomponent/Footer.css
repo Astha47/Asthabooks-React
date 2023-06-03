@@ -1,0 +1,60 @@
+.Footer{
+    width: 100vw;
+    min-height: 600px;
+    height: fit-content;
+    background-color: black;
+}
+
+.FooterTitle{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+}
+
+.FooterTitle img{
+    height: 30%;
+    margin: auto;
+}
+
+.FooterContent{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    min-height: 400px;
+    display: flex;
+}
+
+.FooterFirstRow{
+    height: fit-content;
+    min-height: 200px;
+    display: flex;
+    width: 40vw;
+}
+
+.FooterSecondRow{
+    height: fit-content;
+    min-height: 200px;
+    width: 20vw;
+}
+
+.FooterSecondRow h3{
+    color: white;
+    text-align: left;
+    cursor:context-menu;
+}
+
+.FooterSecondRow li{
+    color: white;
+    transition: all 0.2s ease-in-out;
+    text-align: left;
+    height: fit-content;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.FooterSecondRow li:hover{
+    color: white;
+    transition: all 0.2s ease-in-out;
+    margin-left: 20px;
+    font-weight: 600;
+    
+}

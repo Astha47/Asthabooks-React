@@ -2,6 +2,7 @@ import './mycomponent/Header'
 import Mainframe from './Mainframe';
 import './App.css';
 import Header from './mycomponent/Header';
+import Footer from './mycomponent/Footer';
 import { useState } from 'react';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Header activeTab={activeTab} onTabChange={handleTabChange}/>
       <Mainframe activeTab={activeTab}/>
+      <Footer/>
     </div>
   );
 }
