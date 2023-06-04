@@ -1,0 +1,15 @@
+.BooksTab{
+    height: calc(100vh - 170px);
+    width: 100%;
+    background-color: bisque;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.BooksTabHero{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    background-color: blue;
+}

@@ -47,6 +47,9 @@ function Footer() {
                     </div>
                 </div>
             </div>
+            <div className='FooterBottom'>
+                <h4> Asthabooks by Astha 2023 (C)</h4>
+            </div>
         </div>
     );
 }

@@ -18,6 +18,7 @@ function Home() {
             <BooksSectionL title={sections[0][0]} description={sections[0][1]} bgtitle='./img/sectionbg/science.jpg' booksarray={bukusains}/>
             <BarierBlock/>
             <BooksSectionR title={sections[1][0]} description={sections[1][1]} bgtitle='./img/sectionbg/fiction.jpg' booksarray={bukusains}/>
+            <BarierBlock/>
         </div>
      );
 }

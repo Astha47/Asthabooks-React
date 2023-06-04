@@ -1,6 +1,5 @@
 .Footer{
     width: 100vw;
-    min-height: 600px;
     height: fit-content;
     background-color: black;
 }
@@ -19,7 +18,7 @@
 .FooterContent{
     padding-left: 10vw;
     padding-right: 10vw;
-    min-height: 400px;
+    min-height: 200px;
     display: flex;
 }
 
@@ -57,4 +56,12 @@
     margin-left: 20px;
     font-weight: 600;
     
+}
+
+.FooterBottom{
+    padding-left: 10vw;
+    color: rgb(146, 148, 163);
+    font-weight: 100;
+    text-align: left;
+    height: 100px;
 }
