@@ -8,11 +8,19 @@ function Mainframe({ activeTab }) {
 
     //Fetch Data For Tabs
     let HeroTabsDatabase = [
-        {type: 'AllBooks', heroTitle : 'Semua Koleksi Repositori', imgurl : '', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-        {type: 'CollegeBooks', heroTitle : 'Semua Koleksi Repositori', imgurl : '', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-        {type: 'SelfImprovements', heroTitle : 'Semua Koleksi Repositori', imgurl : '', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-        {type: 'Novel', heroTitle : 'Semua Koleksi Repositori', imgurl : '', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
+        {type: 'AllBooks', heroTitle : 'Semua Koleksi Repositori', imgurl : './img/tabshero/AllBooks.jpg', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
+        {type: 'CollegeBooks', heroTitle : 'Buku Tunjangan Belajarmu', imgurl : './img/tabshero/CollegeBooks.jpg', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
+        {type: 'SelfImprovement', heroTitle : 'Semua Koleksi Repositori', imgurl : './img/tabshero/SelfImprovement.jpg', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
+        {type: 'Novel', heroTitle : 'Semua Koleksi Repositori', imgurl : './img/tabshero/Novel.jpg', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
         {type: 'TulisanNala', heroTitle : 'Semua Koleksi Repositori', imgurl : '', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
+    ];
+    let BooksData = [
+        {type : 'CollegeBooks', title : '', coverimg : '', description : ''},
+        {type : 'CollegeBooks', title : '', coverimg : '', description : ''},
+        {type : 'CollegeBooks', title : '', coverimg : '', description : ''},
+        {type : 'CollegeBooks', title : '', coverimg : '', description : ''},
+        {type : 'CollegeBooks', title : '', coverimg : '', description : ''},
+        {type : 'CollegeBooks', title : '', coverimg : '', description : ''},
     ];
     
     console.log('Menampilkan data untuk all books : ')
@@ -27,19 +35,11 @@ function Mainframe({ activeTab }) {
         }
     }
 
-    switch (activeTab) {
-        case 'Home':
-            TabToShow = <Home/>
-            break;
-        
-        case 'AllBooks':
-            TabToShow = <BooksTab hero = {HeroTabsData}/>
-            break;
-    
-        default:
-            break;
+    if (activeTab === 'Home') {
+        TabToShow = <Home/>
+    } else {
+        TabToShow = <BooksTab hero={HeroTabsData} books={BooksData}/>
     }
-
     
 
     return ( 

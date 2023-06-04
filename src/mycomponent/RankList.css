@@ -8,6 +8,7 @@
     border-radius: 5px;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .RankItem:hover{

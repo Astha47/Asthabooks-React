@@ -1,15 +1,46 @@
 .BooksTab{
     height: calc(100vh - 170px);
     width: 100%;
-    background-color: bisque;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    display: flex;
 }
 
 .BooksTabHero{
-    width: 30%;
+    width: 600px;
     height: 100%;
     position: relative;
     top: 0;
-    background-color: blue;
+    display: flex;
+}
+
+.BooksTabContent{
+    width: calc(100vw - 600px);
+    height: 100%;
+    background-color: brown;
+}
+
+.TabHeroContainer{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+}
+
+.THTitle{
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 22pt;
+}
+
+.THDecription{
+    color: white;
+    font-size: 12pt;
+}
+
+.BTCContainer{
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    background-color: aliceblue;
 }
