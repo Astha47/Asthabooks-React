@@ -1,6 +1,7 @@
 import React from 'react';
 import './bookstab.css';
-import BooksCategoryHeader from '../../mycomponent/BooksCategoryHeader';
+import CategoryContainer from '../../mycomponent/CategoryContainer';
+import NoData from '../../mycomponent/NoData';
 
 function BooksTab({ hero, books }) {
 
@@ -15,6 +16,67 @@ function BooksTab({ hero, books }) {
         display: 'flex',
     }
 
+    let componentToShow = [];
+    
+    if (hero.type === 'AllBooks') {
+
+        //Mengumpulkan kategori
+        let category = [];
+        for (let i = 0; i < books.length; i++) {
+            let found = false;
+            for (let j = 0; j < category.length ;j++) {
+                if (books[i].type === category[j]) {
+                    found = true;
+                }
+            }
+            if (found === false) {
+                category.push(books[i].type)
+            }
+          }
+        
+        if (category.length === 0){
+            componentToShow.push(<NoData/>)
+        } else {
+            //Menghitung jumlah per kategori
+            let jumlah = [];
+            for (let i = 0; i < category.length; i++) {
+                let counter = 0;
+                for (let j = 0; j < books.length; j++) {
+                    if (books[j].type === category[i]) {
+                        counter++;
+                    }
+                }
+                jumlah.push(counter);
+            }
+
+            //Disini sudah ada variabel category, jumlah, dan books
+            //Buat ID
+            let categoryid = [];
+            for (let i = 0; i < category.length; i++) {
+                categoryid.push('category'+i)
+            }
+
+
+            //Lakukan loops untuk input data ke componentToShow
+            for (let i = 0; i < category.length; i++) {
+                let booksList = [];
+                for (let j = 0; j < books.length; j++) {
+                    if (books[j].type === category[i]) {
+                        booksList.push(books[j])
+                    }
+                }
+
+                //Mengisikan Komponen
+                componentToShow.push(<CategoryContainer headertitle={category[i]} amount={jumlah[i]} booksdata={booksList} key={categoryid[i]}/>)
+            }
+        }
+        
+
+    } else {
+
+    }
+
+
 
     return (
         <div className="BooksTab">
@@ -26,7 +88,7 @@ function BooksTab({ hero, books }) {
             </div>
             <div className="BooksTabContent" style={TabContentStyle}>
                 <div className='BTCContainer'>
-                    <BooksCategoryHeader/>
+                    {componentToShow}
                 </div>
             </div>
         </div>
