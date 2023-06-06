@@ -17,7 +17,6 @@
 .BooksTabContent{
     width: calc(100vw - 600px);
     height: 100%;
-    background-color: brown;
 }
 
 .TabHeroContainer{
@@ -42,5 +41,5 @@
     width: 90%;
     height: 85%;
     margin: auto;
-    background-color: aliceblue;
+    overflow: auto;
 }

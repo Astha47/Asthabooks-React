@@ -1,6 +1,7 @@
 import React from 'react';
 import './bookstab.css';
 import CategoryContainer from '../../mycomponent/CategoryContainer';
+import BooksCardContainerTab from '../../mycomponent/BooksCardContainerTab';
 import NoData from '../../mycomponent/NoData';
 
 function BooksTab({ hero, books }) {
@@ -18,7 +19,7 @@ function BooksTab({ hero, books }) {
 
     let componentToShow = [];
     
-    if (hero.type === 'AllBooks') {
+    if (hero.type === 'All Books') {
 
         //Mengumpulkan kategori
         let category = [];
@@ -73,7 +74,16 @@ function BooksTab({ hero, books }) {
         
 
     } else {
+        //Mencari Buku2 yang memiliki kategori yang sama
+        let booksToShow = [];
 
+        for (let i = 0; i < books.length; i++) {
+            if (books[i].type === hero.type) {
+                booksToShow.push(books[i])
+            }
+        }
+
+        componentToShow.push(<BooksCardContainerTab data={booksToShow}/>)
     }
 
 

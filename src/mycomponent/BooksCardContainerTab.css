@@ -1,0 +1,6 @@
+.BooksCardContainerTab{
+    width: calc((100vw - 600px) * 90 / 100);
+    height: calc((100vh - 170px) * 85 / 100);
+    background-color: black;
+    display: inline-flex;
+}

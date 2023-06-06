@@ -63,19 +63,19 @@ function Header({ activeTab, onTabChange }) {
             </div>
             <div className='menubar'>
                 <div className='mbcategory'>
-                    <div className={activeTab === 'AllBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('AllBooks')}>
+                    <div className={activeTab === 'AllBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('All Books')}>
                         <p>All Books</p>    
                     </div>
-                    <div className={activeTab === 'CollegeBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('CollegeBooks')}>
+                    <div className={activeTab === 'CollegeBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('College Books')}>
                         <p>College Books</p>
                     </div>
-                    <div className={activeTab === 'SelfImprovement' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('SelfImprovement')}>
+                    <div className={activeTab === 'SelfImprovement' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('Self Improvement')}>
                         <p>Self Improvement</p>
                     </div>
                     <div className={activeTab === 'Novel' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('Novel')}>
                         <p>Novel</p>
                     </div>
-                    <div className={activeTab === 'TulisanNala' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('TulisanNala')}>
+                    <div className={activeTab === 'TulisanNala' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('Tulisan Nala')}>
                         <p>Tulisan Nala</p>
                     </div>
                 </div>
