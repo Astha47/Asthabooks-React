@@ -6,8 +6,6 @@ const RankList = ({ rank, judul, bg }) => {
   let TitleContainerClass = '';
   let background = './img/' + bg;
 
-  console.log(bg)
-
   if (rank === 1) {
     TierContainerClass = 'RLTierContainer1';
     TitleContainerClass = 'RLTitleContainer1';

@@ -1,7 +1,6 @@
 import './BooksList.css'
 
 function BooksList({book}) {
-    console.log('Ini data cover : ', book.coverimg)
     
     const cellStyle = {
         backgroundImage: `url(${book.coverimg})`

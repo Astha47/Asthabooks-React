@@ -43,3 +43,15 @@
     margin: auto;
     overflow: auto;
 }
+
+.BTCContainer::-webkit-scrollbar {
+    width: 0.5em; /* Adjust the width as needed */
+}
+  
+.BTCContainer::-webkit-scrollbar-thumb {
+    background-color: #888; /* Customize the color of the thumb */
+}
+  
+.BTCContainer::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Customize the color of the track */
+}

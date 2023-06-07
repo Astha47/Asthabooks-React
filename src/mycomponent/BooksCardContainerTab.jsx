@@ -3,17 +3,20 @@ import './BooksCardContainerTab.css'
 import BooksCard from "./BooksCard";
 
 function BooksCardContainerTab({data}) {
+
+    console.log('ini datanya : ', data)
+
+    let display = [];
+
+    for (let i = 0; i < data.length; i++) {
+        display.push(<BooksCard title={data[i].title} description={data[i].description} cover={data[i].coverimg} key={data[i].id}/>)
+    }
+
     return ( 
         <div className="BooksCardContainerTab">
-            <BooksCard/>
-            <BooksCard/>
-            <BooksCard/>
-            <BooksCard/>
-            <BooksCard/>
-            <BooksCard/>
-            <BooksCard/>
-            <BooksCard/>
-            <BooksCard/>
+            <div className="BCCBox">
+                {display}
+            </div>
         </div>
     );
 }

@@ -36,7 +36,6 @@ function Mainframe({ activeTab }) {
         
     ];
     
-    console.log('Menampilkan data untuk all books : ')
 
     let HeroTabsData;
     let TabToShow;
