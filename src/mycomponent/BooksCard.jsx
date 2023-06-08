@@ -11,7 +11,10 @@ function BooksCard({title, description, cover}) {
             <div className="BooksCardInnerBox">
                 <div className="BCCover" style={coverStyle}></div>
                 <div className="BCTitleContainer">
-                    <div className="BCTitleBox"></div>
+                    <div className="BCTitleBox">
+                        <div className="BCTitle">{title}</div>
+                        <div className="BCDescription">{description}</div>
+                    </div>
                 </div>
             </div>
         </div>

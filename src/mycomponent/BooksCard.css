@@ -10,17 +10,51 @@
     background-color: blue;
     display: block;
     border-radius: 5px;
+    cursor: pointer;
     overflow: hidden;
 }
 
 .BCCover{
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.2s ease-in;
 }
 
-.BCTitleContainer{
+.BCTitleContainer {
     width: 100%;
-    height: 20%;
+    height: 50%;
+    background-color: rgba(12, 8, 55, 0.533);
+    position: relative;
+    transition: all 0.2s ease-in;
+    top: 0;
+    backdrop-filter: blur(4px);
+    display:flex;
+  }
+
+.BooksCardInnerBox:hover .BCCover{
+    width: 110%;
+    height: 110%;
+    transition: all 0.2s ease-in;
+}
+
+.BooksCardInnerBox:hover .BCTitleContainer{
+    top: -60%;
+    transition: all 0.2s ease-in;
+}
+
+.BCTitleBox{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.BCTitle{
+    color: white;
+    text-align: left;
+    font-size: 13pt;
+    font-weight: 600;
 }
