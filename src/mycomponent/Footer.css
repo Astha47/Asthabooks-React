@@ -16,7 +16,7 @@
 }
 
 .FooterContent{
-    padding-left: 10vw;
+    padding-left: 15vw;
     padding-right: 10vw;
     min-height: 200px;
     display: flex;
@@ -64,4 +64,32 @@
     font-weight: 100;
     text-align: left;
     height: 100px;
+}
+
+@media (max-width : 1136px){
+    .FooterContent{
+        height: fit-content;
+        display: block;
+    }
+
+    .FooterFirstRow{
+        width: 100%;
+    }
+
+    .FooterSecondRow{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 592px){
+    .FooterFirstRow{
+        display: block;
+        height: fit-content;
+    }
+
+    .FooterSecondRow{
+        display: block;
+        height: fit-content;
+    }
 }

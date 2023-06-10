@@ -1,6 +1,7 @@
 import './Mainframe.css'
 import Home from './tabs/home/home';
 import BooksTab from './tabs/bookstab/bookstab';
+import Footer from './mycomponent/Footer'
 import React from 'react';
 
 function Mainframe({ activeTab }) {
@@ -12,7 +13,7 @@ function Mainframe({ activeTab }) {
         {type: 'College Books', heroTitle : 'Buku Tunjangan Belajarmu', imgurl : './img/tabshero/CollegeBooks.jpg', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
         {type: 'Self Improvement', heroTitle : 'Semua Koleksi Repositori', imgurl : './img/tabshero/SelfImprovement.jpg', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
         {type: 'Novel', heroTitle : 'Semua Koleksi Repositori', imgurl : './img/tabshero/Novel.jpg', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-        {type: 'Tulisan Nala', heroTitle : 'Semua Koleksi Repositori', imgurl : '', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
+        {type: 'Tulisan Nala', heroTitle : 'Semua Koleksi Repositori', imgurl : './img/tabshero/TulisanNala.jpg', description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
     ];
     let BooksData = [
         {id : 1, type : 'College Books', title : 'Fundamental of Physics by Halliday & Resnic', coverimg : './img/Halliday.png', description : ''},
@@ -57,6 +58,7 @@ function Mainframe({ activeTab }) {
     return ( 
         <div className={`Mainframe ${TabToShow ? 'fade-in' : 'fade-out'}`}>
             {TabToShow}
+            <Footer/>
         </div>
      );
 }
