@@ -1,3 +1,15 @@
 .BarierBlock{
     height: 50px;
 }
+
+@media (max-width:1500px) {
+    .BarierBlock{
+        height: calc(10vw / 3);
+    }    
+}
+
+@media (max-width:780px) {
+    .BarierBlock{
+        height: 26px;
+    }    
+}

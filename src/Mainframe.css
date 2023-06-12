@@ -17,3 +17,15 @@
 .fade-out {
     opacity: 0;
 }
+
+@media (max-width: 1500px) {
+    .Mainframe{
+        margin-top: calc(100vw * 17/150);
+    }    
+}
+
+@media (max-width:780px) {
+    .Mainframe{
+        margin-top: 88.39px;
+    }
+}
