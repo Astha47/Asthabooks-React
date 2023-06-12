@@ -1,6 +1,8 @@
 import './MobileNavBar.css'
 import HomeIcon from '../img/homeicon';
-import SearchIcon from '../img/searchicon'
+import SearchIcon from '../img/searchicon';
+import CollectionIcon from '../img/collectionicon';
+import NotificationIcon from '../img/notificationicon';
 
 function MobileNavBar({ activeTab, onTabChange }) {
 
@@ -19,8 +21,16 @@ function MobileNavBar({ activeTab, onTabChange }) {
                         <SearchIcon height='100%' width='auto' stroke={LightColor} fill={activeTab === 'Search' ? LightColor : ''} margin='auto'/>
                     </div>
                 </div>
-                <div className='MNavTab'></div>
-                <div className='MNavTab'></div>
+                <div className='MNavTab'>
+                    <div className='MNavTabIcon'>
+                        <NotificationIcon height='100%' width='auto' fill={LightColor} margin='auto'/>
+                    </div>
+                </div>
+                <div className='MNavTab'>
+                    <div className='MNavTabIcon'>
+                        <CollectionIcon height='100%' width='auto' fill={LightColor}  margin='auto'/>
+                    </div>
+                </div>
             </div>
         </div>
      );
