@@ -245,3 +245,25 @@
         width: calc(100% - 15.001%);
     }
 }
+
+@media (max-width:780px) {
+    .searchboxsection{
+        display: none;
+    }
+
+    .NavigationBar{
+        display: none;
+    }
+
+    .useraccount{
+        display: none;
+    }
+
+    .LogoContainer{
+        width: 100%;
+    }
+
+    .MainHeader{
+        height: 88.39px;
+    }
+}
