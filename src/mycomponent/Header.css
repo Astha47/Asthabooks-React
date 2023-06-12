@@ -8,14 +8,14 @@
 }
 
 .Header{
-    height: 120px;
+    height: calc(100% * 12/17);
     display: flex;
     background-image: linear-gradient(to bottom, rgb(20, 20, 49),rgb(20, 20, 49), rgb(7, 7, 17));
     backdrop-filter: blur(8px);
 }
 
 .menubar{
-    height: 50px;
+    height: calc(100% * 5/17);
     width: 100vw;
     display: flex;
     background-color: rgb(34, 34, 77);
@@ -45,8 +45,8 @@
 
 .searchcontainer{
     margin: auto;
-    width: 700px;
-    height: 55px;
+    width: calc(100% * 8/9);
+    height: 40%;
     background-color: rgb(39, 29, 56);
     border-radius: 40px;
     border-width: 3px;
@@ -107,7 +107,7 @@
     display: flex;
     position: relative;
     width: calc(60 * 4px);
-    height: 55px;
+    height: 50%;
 }
 
 .Tab{
@@ -139,7 +139,7 @@
 }
 
 .accountcontainer{
-    height: 50px;
+    height: 50%;
     width: 140px;
     border: solid;
     border-width: 4px;
@@ -194,4 +194,54 @@
     display: flex;
     cursor: pointer;
     transition: all 0.2s ease-in;
+}
+
+@media (max-width : 1650px) {
+    .NavigationBar{
+        width: 250px;
+    }
+
+    .searchboxsection{
+        width: calc(100vw - 750px);
+        
+    }
+
+}
+
+@media (max-width: 1500px) {
+    .MainHeader{
+        height: calc(100vw * 17/150);
+    }
+
+    .LogoContainer{
+        width: 20vw;
+    }
+
+    .searchboxsection{
+        width: calc(80vw - ((200/15) * 1vw ) - 250px);
+    }
+
+    .useraccount{
+        width: calc((200/15) * 1vw);
+    }
+
+    .searchbox input{
+        font-size: 1.28vw;
+    }
+
+    .accountcontainer{
+        width: 70%;
+    }
+
+    .mbtab p{
+        font-size: 1.062vw;
+    }
+
+    .searchlogo{
+        width: 15.001%;
+    }
+
+    .searchbox{
+        width: calc(100% - 15.001%);
+    }
 }

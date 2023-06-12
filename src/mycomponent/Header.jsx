@@ -58,7 +58,6 @@ function Header({ activeTab, onTabChange }) {
 
                 <div className='useraccount'>
                     <div className='accountcontainer'>
-                        
                     </div>
                 </div>
 
