@@ -9,6 +9,8 @@ import CollectionIcon from '../img/collectionicon';
 
 function Header({ activeTab, onTabChange }) {
     const LightColor = '#FFFFFF'
+    
+
     return (
         <div className='MainHeader'>
             <div className="Header">
@@ -19,7 +21,7 @@ function Header({ activeTab, onTabChange }) {
                 <div className="searchboxsection">
                     <div className="searchcontainer">
                         <div className='searchbox'>
-                            <input type="text" />
+                            <input type="text" placeholder='Search Anything!' id='searchbox'/>
                         </div>
                         <div className='searchlogo'>
                             <div className='searchlogocontainer'>
