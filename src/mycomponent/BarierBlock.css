@@ -10,6 +10,6 @@
 
 @media (max-width:780px) {
     .BarierBlock{
-        height: 26px;
+        display: none;
     }    
 }
