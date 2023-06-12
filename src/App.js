@@ -3,6 +3,7 @@ import Mainframe from './Mainframe';
 import './App.css';
 import Header from './mycomponent/Header';
 import { useState } from 'react';
+import MobileNavBar from './mycomponent/MobileNavBar';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <Header activeTab={activeTab} onTabChange={handleTabChange}/>
       <Mainframe activeTab={activeTab}/>
+      <MobileNavBar activeTab={activeTab} onTabChange={handleTabChange}/>
     </div>
   );
 }

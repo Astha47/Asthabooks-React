@@ -21,6 +21,7 @@ function HeroSection(TierLists) {
         backgroundImage: `url(${BackgroundImage})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
     };
     const TopStyle = {
         backgroundImage: `url(${TopBG})`,

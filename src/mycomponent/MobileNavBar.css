@@ -1,0 +1,33 @@
+.MobileNavBar{
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(0, 0, 26);
+    display: none;
+}
+
+.MNavContainer{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    margin:auto;
+}
+
+.MNavTab{
+    height: 100%;
+    width: 70px;
+    display: flex;
+}
+
+.MNavTabIcon{
+    height: 60%;
+    width: 60%;
+    margin: auto;
+}
+
+@media (max-width: 780px) {
+    .MobileNavBar{
+        display: flex;
+    }
+}
