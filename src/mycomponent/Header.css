@@ -262,8 +262,17 @@
     .LogoContainer{
         width: 100%;
     }
+    
+    .menubar{
+        display: none;
+    }
 
     .MainHeader{
         height: 88.39px;
+        width: 100vw;
+    }
+
+    .Header{
+        height: 100%;
     }
 }
