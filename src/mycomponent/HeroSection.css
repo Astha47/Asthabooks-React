@@ -117,7 +117,7 @@
     min-width: 400px;
     background-color: rgb(9, 1, 18);
     padding: 50px;
-    display: none;
+    display: block;
 }
 
 .RecHeader{
