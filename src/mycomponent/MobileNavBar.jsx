@@ -12,13 +12,13 @@ function MobileNavBar({ activeTab, onTabChange }) {
         <div className="MobileNavBar">
             <div className='MNavContainer'>
                 <div className='MNavTab'>
-                    <div className='MNavTabIcon'>
+                    <div className='MNavTabIcon' onClick={() => onTabChange('Home')}>
                         <HomeIcon height='100%' width='auto' stroke={LightColor} fill={activeTab === 'Home' ? LightColor : ''} margin='auto'/>
                     </div>
                 </div>
                 <div className='MNavTab'>
-                    <div className='MNavTabIcon'>
-                        <SearchIcon height='100%' width='auto' stroke={LightColor} fill={activeTab === 'Search' ? LightColor : ''} margin='auto'/>
+                    <div className='MNavTabIcon' onClick={() => onTabChange('SearchMobile')}>
+                        <SearchIcon height='100%' width='auto' stroke={LightColor} fill={activeTab === 'SearchMobile' ? LightColor : ''} margin='auto'/>
                     </div>
                 </div>
                 <div className='MNavTab'>

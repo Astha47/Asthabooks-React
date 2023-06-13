@@ -208,3 +208,21 @@
         font-size: 14pt;
     }
 }
+
+@media (max-width:780px) {
+    .HeroSection{
+        height: fit-content;
+    }
+
+    .LUDesc{
+        font-size: calc(2vw + (15.4px - 2vw)/3);
+    }
+
+    .LUTitle{
+        font-size: calc(5vw + (38.751px - 5vw)/4);
+    }
+
+    .LUHeader{
+        font-size: calc(3.5vw + (27.055px - 3.5vw)/4);
+    }
+}

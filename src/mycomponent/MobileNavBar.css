@@ -1,9 +1,15 @@
 .MobileNavBar{
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-color: rgb(49, 49, 49);
+    border-style: solid;
     width: 100vw;
     height: 60px;
     position: fixed;
     bottom: 0;
-    background-color: rgb(0, 0, 26);
+    background-color: rgb(0, 0, 0);
     display: none;
 }
 

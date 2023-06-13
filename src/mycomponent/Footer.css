@@ -82,6 +82,12 @@
     
 }
 
+@media (max-width:780px){
+    .Footer{
+        display: none;
+    }
+}
+
 @media (max-width: 592px){
     .FooterFirstRow{
         display: block;

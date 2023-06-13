@@ -1,6 +1,7 @@
 import './Mainframe.css'
 import Home from './tabs/home/home';
 import BooksTab from './tabs/bookstab/bookstab';
+import SearchMobile from './tabs/searchmobile/searchMobile';
 import Footer from './mycomponent/Footer'
 import React from 'react';
 
@@ -50,6 +51,9 @@ function Mainframe({ activeTab }) {
 
     if (activeTab === 'Home') {
         TabToShow = <Home/>
+    } else if (activeTab === 'SearchMobile'){
+        TabToShow = <SearchMobile books={BooksData}/>
+
     } else {
         TabToShow = <BooksTab hero={HeroTabsData} books={BooksData}/>
     }
