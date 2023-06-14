@@ -1,15 +1,24 @@
 import './MSearchResult.css'
+import MSearchCategories from './MSearchCategories';
+import MSearchItems from './MSearchItems';
+import NoData from './NoData';
 
-function MSearchResult({keyword,books}) {
-    keyword = 'sdfsd'
+function MSearchResult({hero, searchresult, keyword}) {
 
     let headerTitle = '';
+    let DOMtoShow = [];
 
+    
 
-    if (keyword === '') {
+    if (keyword.length === 0) {
         headerTitle = 'Categories';
-    } else {
+        DOMtoShow.push(<MSearchCategories hero={hero}/>)
+    } else if (searchresult.length !== 0){
         headerTitle = 'Search result for "'+keyword+'"'
+        DOMtoShow.push(<MSearchItems searchresult={searchresult}/>)
+    } else {
+        headerTitle = 'No result for "'+keyword+'"'
+        DOMtoShow.push(<NoData/>)
     }
 
     return (
@@ -18,7 +27,7 @@ function MSearchResult({keyword,books}) {
                 <div className="MSRTitle">{headerTitle}</div>
             </div>
             <div className="MSRItems">
-
+                {DOMtoShow}
             </div>
         </div>
     );

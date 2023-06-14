@@ -1,7 +1,7 @@
 .MSearchResult{
     width: 100%;
     height: calc(100% - 100px);
-    background-color: blue;
+    background-color: rgb(2, 2, 17);
 }
 
 .MSRHeader{
@@ -16,4 +16,9 @@
     margin-left: 30px;
     color: white;
     font-weight: 600;
+}
+
+.MSRItems{
+    height: calc(100% - 50px);
+    display: flex;
 }
