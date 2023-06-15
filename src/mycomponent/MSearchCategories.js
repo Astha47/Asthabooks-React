@@ -2,8 +2,6 @@ import './MSearchCategories.css'
 
 function MSearchCategories({hero}) {
 
-    console.log('ni loh file heronya :' ,hero[0])
-
     let CategoriesToShow = []
 
     for(let i = 0; i < hero.length; i++){

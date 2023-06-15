@@ -1,12 +1,12 @@
-.MSearchCategories{
-    width: 100%;
+.MSearchItems{
     height: 100%;
+    width: 100%;
+    display: flex;
     margin: auto;
     overflow: auto;
-    display: flex;
 }
 
-.MSCContainer{
+.MSIContainer{
     width: 90vw;
     height: fit-content;
     margin: auto;
@@ -15,18 +15,32 @@
     flex-wrap: wrap;
 }
 
-.MSCCard{
+.MSICard{
     width: 45vw;
-    height: 125px;
-    display: flex;
+    height: 250px;
+    display: block;
 }
 
-.MSCInnerCard{
+.MSIInnerCard{
     width: 80%;
     height: 75%;
     margin: auto;
     border-radius: 15px;
     background-color: rgb(54, 54, 54);
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.MSITitle{
+    position: relative;
+    top: -83%;
+    width: 80%;
+    height: 75%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: rgba(21, 21, 21, 0.499);
     color: white;
     text-align: left;
     font-weight: 600;
