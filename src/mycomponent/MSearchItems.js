@@ -2,7 +2,7 @@ import './MSearchItems.css'
 
 function MSearchItems({searchresult}) {
 
-    console.log('ini search result : ',searchresult)
+    //console.log('ini search result : ',searchresult)
 
     let ItemsToShow = []
 

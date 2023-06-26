@@ -34,7 +34,7 @@ function App() {
   }, []);
 
   
-  console.log('ini adalah data lokal ', BooksData )
+  //console.log('ini adalah data lokal ', BooksData )
 
   // Tab Handler
 

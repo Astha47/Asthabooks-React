@@ -10,7 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 700px;
-    background-color: chartreuse;
+
     display: flex;
 }
 
@@ -18,7 +18,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 700px;
-    background-color: chartreuse;
+
     display: flex;
 }
 
@@ -29,7 +29,7 @@
 
 .BookListSection{
     width: calc(100vw - 700px);
-    background-color: brown;
+
 }
 
 .ListTitle{
@@ -48,7 +48,7 @@
 
 .BooklistContainer{
     height: 75%;
-    background-image: linear-gradient(to bottom,#080146,#080146,#080146,#03001d);
+
     display: flex;
 }
 

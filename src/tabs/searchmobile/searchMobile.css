@@ -25,7 +25,7 @@
 
 .MSBInput{
     height: 100%;
-    width: 85%;
+    width: calc(100% - 80px);
     background-color: rgb(19, 19, 34);
     display: flex;
 }
@@ -42,8 +42,9 @@
 
 .MSBButton{
     height: 100%;
-    width: 15%;
+    width: 80px;
     background-color: rgb(20, 43, 64);
+    display: flex;
 }
 
 .MSearchResultSection{
@@ -51,3 +52,16 @@
     height: calc(100% - 100px);
 }
 
+.searchIcon{
+    stroke: white;
+    width: 32px;
+    height: 32px;
+    margin:auto;
+}
+
+.xIcon{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    margin:auto;
+}
