@@ -13,8 +13,8 @@ function App() {
 
   // Condition Handler
 
-  const [MainAppLoad , setMainAppLoad] = useState(false);
-  const [AccountStatus, setAccountStatus] = useState(false);
+  const [MainAppLoad , setMainAppLoad] = useState(true);
+  const [AccountStatus, setAccountStatus] = useState(true);
 
   
 
@@ -54,7 +54,7 @@ function App() {
   if (AccountStatus) {
     if (MainAppLoad) {
       MainAppContent = [<Header activeTab={activeTab} onTabChange={handleTabChange}/>,
-                        <Mainframe activeTab={activeTab}/>,
+                        <Mainframe activeTab={activeTab} BooksData={BooksData}/>,
                         <MobileNavBar activeTab={activeTab} onTabChange={handleTabChange}/>]
     } else {
       MainAppContent = <LoadingApp/>;
