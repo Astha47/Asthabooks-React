@@ -2,7 +2,7 @@
     width: calc((100vw - 600px) * 90 / 100);
     height: calc((100vh - 170px) * 85 / 100);
     display: flex;
-    overflow: auto;
+    overflow: auto;    
 }
 
 .BooksCardContainerTab::-webkit-scrollbar {
@@ -26,6 +26,8 @@
     min-height: 100px;
     margin: auto;
     margin-top: 0;
+    justify-content: center;
+    gap: 40px;
 }
 
 @media (max-width:1100px){

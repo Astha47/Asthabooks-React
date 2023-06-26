@@ -1,11 +1,10 @@
 .BooksCardOuterBox{
-    height: 380px;
+    height: 340px;
     width: 250px;
-    margin: auto;
 }
 
 .BooksCardInnerBox{
-    height: 90%;
+    height: 100%;
     width: 100%;
     background-color: blue;
     display: block;
