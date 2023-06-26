@@ -1,0 +1,63 @@
+.LoginPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.LPContainer{
+    width: 450px;
+    height: 600px;
+    margin: auto;
+    display: block;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: rgb(75, 68, 100);
+    border-width: 5px;
+    overflow: hidden;
+}
+
+.LPLogo{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+.LPLogo img{
+    width: 45%;
+    margin: auto;
+}
+
+.LPForm{
+    width: 100%;
+    height: 75%;
+    display: block;
+}
+
+.LPAlert{
+    width: 100%;
+    height: 20%;
+    background-color: yellowgreen;
+}
+
+.LPUsername{
+    width: 100%;
+    height: 20%;
+    background-color: yellow;
+}
+
+.LPPassword{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(82, 82, 17);
+}
+.LPConfirm{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(61, 61, 46);
+}
+
+.LPFooter{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(82, 82, 17);
+}

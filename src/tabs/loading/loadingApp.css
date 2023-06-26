@@ -1,0 +1,21 @@
+.LoadingApp{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.LAMainContainer{
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+}
+
+.LAMainContainer img{
+    width: 100%;
+}
+
+@media (max-width: 780px){
+    .LAMainContainer{
+        width: 50vw;
+    }
+}
