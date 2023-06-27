@@ -3,11 +3,12 @@
 .Mainframe{
     margin-top: 170px;
     min-height: calc(100vh - 170px);
+    height: fit-content;
     width: 100vw;
     overflow: hidden;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-    transition: opacity 0.3s ease;
+    
 }
 
 .fade-in {
@@ -27,5 +28,6 @@
 @media (max-width:780px) {
     .Mainframe{
         margin-top: 80px;
+        margin-bottom: 60px;
     }
 }

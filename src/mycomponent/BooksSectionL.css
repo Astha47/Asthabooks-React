@@ -1,10 +1,3 @@
-/*Global setting*/
-.BooksSection{
-    height: 600px;
-    display: flex;
-}
-
-
 .HeroBookL{
     background-size: cover;
     background-position: center;
@@ -13,145 +6,11 @@
     display: flex;
 }
 
-
-.HeroBookContainer{
-    padding: 30px 70px;
-    margin: auto;
-}
-
-.BookListSection{
-    width: calc(100vw - 700px);
-}
-
-.ListTitle{
-    color: white;
-    font-size: 25pt;
-    font-weight: 600;
-    height: fit-content;
-    margin-bottom: 10px;
-}
-
-.ListDescription{
-    color: white;
-    font-size: 13pt;
-    height: fit-content;
-}
-
-.BooklistContainer{
-    height: 75%;
-    background-image: linear-gradient(to bottom,#080527,#03001d);
-    display: flex;
-}
-
-.BooksCardContainer{
-    margin: auto;
-    width: 800px;
-    height: 350px;
-    border-style: solid;
-    border-radius: 20px;
-    border-color: rgb(235, 235, 235);
-    overflow: hidden;
-    display: flex;
-    border-width: 3px;
-}
-
-.CardCell{
-    width: 25%;
-    height:100%;
-    border-color: rgb(235, 235, 235);
-    border-style: solid;
-    border-width: 1px;
-    cursor: pointer;
-    background-color: #170d73;
-    transition: all 0.2s ease-in-out;
-}
-
-.CardCell:hover{
-    font-weight: 700;
-    background-color: #5e579a;
-    transition: all 0.2s ease-in-out;
-}
-
-.CardBookCover{
-    width: 100%;
-    height: 80%;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.CardBookCover img{
-    width: 120%;
-    height: auto;
-    transition: all 0.2s ease-in-out;
-}
-
-.CardBookCover img:hover{
-    width: 125%;
-    height: auto;
-    transition: all 0.2s ease-in-out;
-}
-
-.MoreBookButtonContainer{
-    display: flex;
-    font-size: 15pt;
-    font-weight: 600;
-    height: 25%;
-    background-color: #03001d;
-}
-
-.BookButton{
-    margin: auto;
-    margin-top: 10px;
-    width: fit-content;
-    padding: 10px 30px;
-    border-radius: 20px;
-    background-color: white;
-    color: #03001d;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.BookButton:hover{
-    background-color: #322b76;
-    color: white;
-    transition: all 0.2s ease-in-out;
-}
-
-.BookCardContainer{
-    width: 1500px;
-    margin: auto;
-    background-color: aliceblue;
-}
-
-.CardTitleContainer{
-    height: 20%;
-    display: flex;
-    color: white;
-}
-
-.CardTitle{
-    margin: auto;
-}
-
 @media (max-width: 1644px){
-    .BooksSection{
-        display: block;
-        height: 1200px;
-    }
+
     .HeroBookL{
         width: 100vw;
         height: 500px;
         display: flex;
-    }
-    .BookListSection{
-        width: 100vw;
-        height: 700px;
-    }
-}
-
-
-@media (max-width: 850px){
-    .BooksCardContainer{
-        width: 90%;
     }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import './BooksSectionR.css';
-
+import './BooksSection.css';
 
 const BooksSectionR = ({ title, description, bgtitle, colorscheme, booksarray }) => {
 

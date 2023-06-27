@@ -1,5 +1,6 @@
 import React from "react";
 import './BooksSectionL.css';
+import './BooksSection.css';
 
 
 const BooksSectionL = ({ title, description, bgtitle, colorscheme, booksarray }) => {
