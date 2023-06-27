@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './mycomponent/Header'
 import Mainframe from './Mainframe';
 import './App.css';
@@ -8,6 +10,7 @@ import MobileNavBar from './mycomponent/MobileNavBar';
 
 import LoadingApp from './tabs/loading/loadingApp';
 import LoginPage from './tabs/login/loginPage';
+import Page404 from './pages/404';
 
 function App() {
 
@@ -76,10 +79,20 @@ function App() {
 
 
   return (
-    <div className="App">
-      {MainAppContent}
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={MainAppContent} />
+        <Route path='*' element={<Page404/>}/>
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+/*
+
+<div className="App">
+      {MainAppContent}
+    </div>
+    */

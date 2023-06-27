@@ -1,0 +1,25 @@
+.Page404{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.Page404Container{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    opacity: 0.5;
+}
+
+.Page404Container p{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+}
+
+.Page404Image{
+    height: 80%;
+    width: 100%;
+    fill: white;
+}
