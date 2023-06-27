@@ -54,7 +54,7 @@ function App() {
   if (AccountStatus) {
     if (MainAppLoad) {
       MainAppContent = [<Header activeTab={activeTab} onTabChange={handleTabChange}/>,
-                        <Mainframe activeTab={activeTab} BooksData={BooksData}/>,
+                        <Mainframe activeTab={activeTab} BooksData={BooksData} onTabChange={handleTabChange}/>,
                         <MobileNavBar activeTab={activeTab} onTabChange={handleTabChange}/>]
     } else {
       MainAppContent = <LoadingApp/>;

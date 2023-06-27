@@ -3,7 +3,7 @@ import './BooksSectionL.css';
 import './BooksSection.css';
 
 
-const BooksSectionL = ({ title, description, bgtitle, colorscheme, booksarray }) => {
+const BooksSectionL = ({ title, description, bgtitle, colorscheme, booksarray, onTabChange, query}) => {
 
     let book1 = './img/' + booksarray[0][1];
     let book2 = './img/' + booksarray[1][1];
@@ -62,7 +62,7 @@ const BooksSectionL = ({ title, description, bgtitle, colorscheme, booksarray })
                 </div>
             </div>
             <div className="MoreBookButtonContainer">
-                <div className="BookButton">More</div>
+                <div className="BookButton" onClick={() => onTabChange(query)}>More</div>
             </div>
         </div>
         </div>

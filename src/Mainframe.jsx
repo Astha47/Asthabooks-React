@@ -10,7 +10,7 @@ import HeroTabsDatabase from './data/HeroTabsDatabase.json'
 //AXIOS
 //import axios from 'axios';
 
-function Mainframe({ activeTab, BooksData }) {
+function Mainframe({ activeTab, BooksData, onTabChange }) {
       
     
 
@@ -26,7 +26,7 @@ function Mainframe({ activeTab, BooksData }) {
 
 
     if (activeTab === 'Home') {
-        TabToShow = <Home/>
+        TabToShow = <Home onTabChange={onTabChange}/>
     } else if (activeTab === 'SearchMobile'){
         TabToShow = <SearchMobile hero={HeroTabsDatabase.HeroTabsDatabase} books={BooksData}/>
 

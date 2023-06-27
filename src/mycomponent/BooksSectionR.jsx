@@ -2,7 +2,7 @@ import React from "react";
 import './BooksSectionR.css';
 import './BooksSection.css';
 
-const BooksSectionR = ({ title, description, bgtitle, colorscheme, booksarray }) => {
+const BooksSectionR = ({ title, description, bgtitle, colorscheme, booksarray, onTabChange, query }) => {
 
     let book1 = './img/' + booksarray[0][1];
     let book2 = './img/' + booksarray[1][1];
@@ -65,7 +65,7 @@ const BooksSectionR = ({ title, description, bgtitle, colorscheme, booksarray })
                 </div>
             </div>
             <div className="MoreBookButtonContainer">
-                <div className="BookButton">More</div>
+                <div className="BookButton" onClick={() => onTabChange(query)}>More</div>
             </div>
         </div>
         <div className="HeroBookRR" style={RightHeroStyle}>
