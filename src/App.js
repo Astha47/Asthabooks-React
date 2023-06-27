@@ -82,6 +82,9 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={MainAppContent} />
+        <Route path='/tab/:category' element={[<Header activeTab={activeTab} onTabChange={handleTabChange}/>,
+                        <Mainframe activeTab={activeTab} BooksData={BooksData} onTabChange={handleTabChange}/>,
+                        <MobileNavBar activeTab={activeTab} onTabChange={handleTabChange}/>]}/>
         <Route path='*' element={<Page404/>}/>
       </Routes>
     </Router>
