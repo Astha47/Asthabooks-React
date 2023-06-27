@@ -1,4 +1,3 @@
-import './NoData.css'
 
 function NoData() {
     return ( 

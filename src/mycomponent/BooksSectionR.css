@@ -46,7 +46,7 @@
 
 .BooklistContainer{
     height: 75%;
-    background-image: linear-gradient(to bottom,#080146,#080146,#080146,#03001d);
+    
     display: flex;
 }
 
