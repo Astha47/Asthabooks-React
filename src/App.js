@@ -10,6 +10,8 @@ import MobileNavBar from './mycomponent/MobileNavBar';
 
 import LoadingApp from './tabs/loading/loadingApp';
 import LoginPage from './tabs/login/loginPage';
+import Homepage from './pages/Homepage';
+import Tabs from './pages/Tabs';
 import Page404 from './pages/404';
 
 function App() {
@@ -81,10 +83,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={MainAppContent} />
-        <Route path='/tab/:category' element={[<Header activeTab={activeTab} onTabChange={handleTabChange}/>,
-                        <Mainframe activeTab={activeTab} BooksData={BooksData} onTabChange={handleTabChange}/>,
-                        <MobileNavBar activeTab={activeTab} onTabChange={handleTabChange}/>]}/>
+        <Route path='/' element={<Homepage BooksData={BooksData}/>} />
+        <Route path='/tab/:category' element={<Tabs BooksData={BooksData}/>}/>
         <Route path='*' element={<Page404/>}/>
       </Routes>
     </Router>
