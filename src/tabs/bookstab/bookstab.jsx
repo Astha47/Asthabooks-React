@@ -75,6 +75,7 @@ function BooksTab({ hero, books }) {
 
     } else {
         //Mencari Buku2 yang memiliki kategori yang sama
+
         let booksToShow = [];
 
         for (let i = 0; i < books.length; i++) {
@@ -83,7 +84,13 @@ function BooksTab({ hero, books }) {
             }
         }
 
-        componentToShow.push(<BooksCardContainerTab data={booksToShow}/>)
+        
+
+        if (booksToShow.length > 0){
+            componentToShow.push(<BooksCardContainerTab data={booksToShow}/>)
+        } else {
+            componentToShow.push(<NoData/>)
+        }
     }
 
 

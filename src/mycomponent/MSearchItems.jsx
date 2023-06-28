@@ -12,7 +12,7 @@ function MSearchItems({searchresult}) {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
         }
-        let item = (<div className='MSICard'>
+        let item = (<div className='MSICard' key={searchresult[i].id}>
             <div className='MSIInnerCard' style={cardStyle}></div>
             <div className='MSITitle'>{searchresult[i].title}</div>
         </div>)

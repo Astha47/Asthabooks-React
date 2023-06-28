@@ -1,9 +1,22 @@
 import React from "react";
 import './BooksSectionL.css';
 import './BooksSection.css';
+import { useNavigate } from "react-router-dom";
 
 
-const BooksSectionL = ({ title, description, bgtitle, colorscheme, booksarray, onTabChange, query}) => {
+const BooksSectionL = ({ title, description, bgtitle, colorscheme, booksarray, query}) => {
+
+    const navigate = useNavigate();
+
+    let link = '/tab/'
+    for (let i = 0; i < query.length; i++){
+        if (query[i] === ' '){
+            link += '-'
+        } else {
+            link += query[i]
+        }
+    }
+
 
     let book1 = './img/' + booksarray[0][1];
     let book2 = './img/' + booksarray[1][1];
@@ -62,7 +75,7 @@ const BooksSectionL = ({ title, description, bgtitle, colorscheme, booksarray, o
                 </div>
             </div>
             <div className="MoreBookButtonContainer">
-                <div className="BookButton" onClick={() => onTabChange(query)}>More</div>
+                <div className="BookButton" onClick={() => navigate(link)}>More</div>
             </div>
         </div>
         </div>

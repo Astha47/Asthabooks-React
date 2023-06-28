@@ -1,27 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import './mycomponent/Header'
-import Mainframe from './Mainframe';
 import './App.css';
-import Header from './mycomponent/Header';
+
 import { useState } from 'react';
 import { useEffect } from 'react';
-import MobileNavBar from './mycomponent/MobileNavBar';
 
-import LoadingApp from './tabs/loading/loadingApp';
-import LoginPage from './tabs/login/loginPage';
+
+//import LoadingApp from './tabs/loading/loadingApp';
+//import LoginPage from './tabs/login/loginPage';
 import Homepage from './pages/Homepage';
 import Tabs from './pages/Tabs';
+import SearchMobile from './pages/SearchMobile';
 import Page404 from './pages/404';
 
 function App() {
-
-  // Condition Handler
-
-  const [MainAppLoad , setMainAppLoad] = useState(true);
-  const [AccountStatus, setAccountStatus] = useState(true);
-
-  
 
   //Fetch Data For Books
 
@@ -38,35 +30,6 @@ function App() {
         });
   }, []);
 
-  
-  //console.log('ini adalah data lokal ', BooksData )
-
-  // Tab Handler
-
-  const [activeTab, setActiveTab] = useState('Home'); // Menyimpan tab aktif saat ini
-
-  // Fungsi untuk mengubah tab aktif
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-  };
-
-
-
-  // Content Handler
-
-  let MainAppContent;
-
-  if (AccountStatus) {
-    if (MainAppLoad) {
-      MainAppContent = [<Header activeTab={activeTab} onTabChange={handleTabChange}/>,
-                        <Mainframe activeTab={activeTab} BooksData={BooksData} onTabChange={handleTabChange}/>,
-                        <MobileNavBar activeTab={activeTab} onTabChange={handleTabChange}/>]
-    } else {
-      MainAppContent = <LoadingApp/>;
-    }
-  } else {
-    MainAppContent = <LoginPage/>;
-  }
 
 /*
   if (MainAppLoad === false) {
@@ -85,6 +48,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage BooksData={BooksData}/>} />
         <Route path='/tab/:category' element={<Tabs BooksData={BooksData}/>}/>
+        <Route path='/tab/search/mobile' element={<SearchMobile BooksData={BooksData}/>}/>
         <Route path='*' element={<Page404/>}/>
       </Routes>
     </Router>
@@ -92,10 +56,3 @@ function App() {
 }
 
 export default App;
-
-/*
-
-<div className="App">
-      {MainAppContent}
-    </div>
-    */

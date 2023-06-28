@@ -7,9 +7,12 @@ import NotificationIcon from '../img/notificationicon';
 import AboutIcon from '../img/abouticon';
 import CollectionIcon from '../img/collectionicon';
 
-function Header({ activeTab, onTabChange }) {
+import { useNavigate } from 'react-router-dom';
+
+function Header({ activeTab}) {
     const LightColor = '#FFFFFF'
     
+    const navigate = useNavigate();
 
     return (
         <div className='MainHeader'>
@@ -34,7 +37,7 @@ function Header({ activeTab, onTabChange }) {
                 <div className="NavigationBar">
                     <div className='NavContainer'>
                         <div className='Tab'>
-                            <div className='navbutton' onClick={() => onTabChange('Home')}>
+                            <div className='navbutton'  onClick={() => navigate('/')}>
                             <HomeIcon height='100%' width='auto' stroke={LightColor} fill={activeTab === 'Home' ? LightColor : ''} margin='auto'/>
                             </div>
                         </div>
@@ -64,19 +67,19 @@ function Header({ activeTab, onTabChange }) {
             </div>
             <div className='menubar'>
                 <div className='mbcategory'>
-                    <div className={activeTab === 'AllBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('All Books')}>
+                    <div className={activeTab === 'AllBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => navigate('/tab/All-Books')}>
                         <p>All Books</p>    
                     </div>
-                    <div className={activeTab === 'CollegeBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('College Books')}>
+                    <div className={activeTab === 'CollegeBooks' ? 'mbtabActive' : 'mbtab'} onClick={() => navigate('/tab/College-Books')} >
                         <p>College Books</p>
                     </div>
-                    <div className={activeTab === 'SelfImprovement' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('Self Improvement')}>
+                    <div className={activeTab === 'SelfImprovement' ? 'mbtabActive' : 'mbtab'} onClick={() => navigate('/tab/Self-Improvement')}>
                         <p>Self Improvement</p>
                     </div>
-                    <div className={activeTab === 'Novel' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('Novel')}>
+                    <div className={activeTab === 'Novel' ? 'mbtabActive' : 'mbtab'} onClick={() => navigate('/tab/Novel')}>
                         <p>Novel</p>
                     </div>
-                    <div className={activeTab === 'TulisanNala' ? 'mbtabActive' : 'mbtab'} onClick={() => onTabChange('Tulisan Nala')}>
+                    <div className={activeTab === 'TulisanNala' ? 'mbtabActive' : 'mbtab'} onClick={() => navigate('/tab/Tulisan-Nala')}>
                         <p>Tulisan Nala</p>
                     </div>
                 </div>

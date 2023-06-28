@@ -1,6 +1,11 @@
 import './MSearchCategories.css'
+import {useNavigate } from 'react-router-dom'
 
 function MSearchCategories({hero}) {
+
+    const navigate = useNavigate();
+
+    console.log('ini hero : ',hero)
 
     let CategoriesToShow = []
 
@@ -10,8 +15,21 @@ function MSearchCategories({hero}) {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
         }
+
+        console.log('ini type', hero.type)
+
+        let keyword = '/tab/'
+        for (let j = 0; j < hero[i].type.length; j++){
+            if (hero[i].type[j] === ' '){
+                keyword += '-'
+            } else {
+                keyword += hero[i].type[j]
+            }
+        }
+
+
         let item = (<div className='MSCCard'>
-            <div className='MSCInnerCard' style={cardStyle}>{hero[i].type}</div>
+            <div className='MSCInnerCard' style={cardStyle} onClick={() => navigate(keyword)} >{hero[i].type} </div>
         </div>)
         CategoriesToShow.push(item)
     }

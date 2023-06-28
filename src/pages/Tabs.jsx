@@ -17,6 +17,7 @@ function Tabs({BooksData}) {
             activeTab += ' '
         }
     }
+    console.log(activeTab)
 
     return (
         <div className="Tabs">
