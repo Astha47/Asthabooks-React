@@ -3,6 +3,7 @@ import MSearchResult from '../../mycomponent/MSearchResult';
 import { useState } from 'react';
 import { ReactComponent as XIcon } from '../../img/x-icon.svg'
 import { ReactComponent as SearchIcon } from '../../img/searchicon.svg'
+//import { useParams } from 'react-router-dom';
 
 
 function SearchMobile({hero, books}) {

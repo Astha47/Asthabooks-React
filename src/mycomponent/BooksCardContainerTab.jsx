@@ -4,8 +4,6 @@ import BooksCard from "./BooksCard";
 
 function BooksCardContainerTab({data}) {
 
-    console.log('ini datanya : ', data)
-
     let display = [];
 
     for (let i = 0; i < data.length; i++) {

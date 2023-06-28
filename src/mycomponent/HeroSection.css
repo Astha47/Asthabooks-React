@@ -125,6 +125,8 @@
     font-size: 20pt;
     font-weight: 600;
     height: 70px;
+    width: 100%;
+    text-align: center;
 }
 
 .RecommendationList{
