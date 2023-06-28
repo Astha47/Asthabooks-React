@@ -3,11 +3,8 @@ import './BooksCard.css'
 
 function BooksCard({title, description, cover}) {
 
-    let gambar = '../.'+cover;
-
-
     const coverStyle = {
-        backgroundImage : `url(${gambar})`
+        backgroundImage : `url(${cover})`
     }
     return (  
         <div className="BooksCardOuterBox">
