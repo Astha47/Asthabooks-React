@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import Homepage from './pages/Homepage';
 import Tabs from './pages/Tabs';
 import SearchMobile from './pages/SearchMobile';
+import Overview from './pages/Overview';
 import Page404 from './pages/404';
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
         <Route path='/' element={<Homepage BooksData={BooksData}/>} />
         <Route path='/tab/:category' element={<Tabs BooksData={BooksData}/>}/>
         <Route path='/tab/search/mobile' element={<SearchMobile BooksData={BooksData}/>}/>
+        <Route path='/overview/:name' element={<Overview BooksData={BooksData}/>}/>
+        <Route path='/repository/:name' element={<SearchMobile BooksData={BooksData}/>}/>
         <Route path='*' element={<Page404/>}/>
       </Routes>
     </Router>

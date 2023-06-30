@@ -2,6 +2,7 @@ import './Mainframe.css'
 import Home from './tabs/home/home';
 import BooksTab from './tabs/bookstab/bookstab';
 import SearchMobile from './tabs/searchmobile/searchMobile';
+import OverviewBody from './tabs/OverviewBody/OverviewBody';
 import Footer from './mycomponent/Footer'
 
 import HeroTabsDatabase from './data/HeroTabsDatabase.json'
@@ -10,7 +11,7 @@ import HeroTabsDatabase from './data/HeroTabsDatabase.json'
 //AXIOS
 //import axios from 'axios';
 
-function Mainframe({ activeTab, BooksData, onTabChange }) {
+function Mainframe({ activeTab, BooksData, Book}) {
       
     
 
@@ -26,10 +27,11 @@ function Mainframe({ activeTab, BooksData, onTabChange }) {
 
 
     if (activeTab === 'Home') {
-        TabToShow = <Home onTabChange={onTabChange}/>
+        TabToShow = <Home/>
     } else if (activeTab === 'SearchMobile'){
         TabToShow = <SearchMobile hero={HeroTabsDatabase.HeroTabsDatabase} books={BooksData}/>
-
+    } else if (activeTab === 'Overview') {
+        TabToShow = <OverviewBody Book={Book}/>
     } else {
         TabToShow = <BooksTab hero={HeroTabsData} books={BooksData}/>
     }

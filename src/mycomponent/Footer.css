@@ -2,6 +2,7 @@
     width: 100vw;
     height: fit-content;
     background-color: black;
+    overflow: hidden;
 }
 
 .FooterTitle{

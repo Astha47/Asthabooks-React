@@ -5,8 +5,6 @@ function MSearchCategories({hero}) {
 
     const navigate = useNavigate();
 
-    console.log('ini hero : ',hero)
-
     let CategoriesToShow = []
 
     for(let i = 0; i < hero.length; i++){
@@ -16,7 +14,6 @@ function MSearchCategories({hero}) {
             backgroundPosition: 'center',
         }
 
-        console.log('ini type', hero.type)
 
         let keyword = '/tab/'
         for (let j = 0; j < hero[i].type.length; j++){
