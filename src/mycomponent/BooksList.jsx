@@ -1,6 +1,11 @@
 import './BooksList.css'
+import { useNavigate } from "react-router-dom";
 
 function BooksList({book}) {
+
+    const navigate = useNavigate();
+
+    const url = '/overview/' + (book.title.replace(/ /g, '-'))
     
     const cellStyle = {
         backgroundImage: `url(${book.coverimg})`
@@ -11,7 +16,7 @@ function BooksList({book}) {
             <div className='BookListBackground' style={cellStyle}></div>
             <div className='BookListBackgroundShade'></div>
             <div className='BookListItemsContainer'>
-                <div className='BLITitle'>
+                <div className='BLITitle' onClick={() => navigate(url)}>
                     <div className='BLITitleBox'>
                     {book.title}
                     </div>
