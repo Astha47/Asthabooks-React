@@ -42,3 +42,35 @@
     width: 100%;
     height: 1000px;
 }
+
+@media (max-width:1500px) {
+    .OHeader{
+        height: calc(100vw * 10 / 75);
+        min-height: 100px;
+    }
+    
+    .OFlyingCardCont{
+        width: calc(100vw / 3);
+        min-width: 170px;
+    }
+
+    .OHDesc{
+        width: calc(100vw *2 /3);
+    }
+
+    .OFlyingCard{
+        width: calc(100vw / 5);
+        height: calc(100vw * 4 / 15);
+        margin-top: calc(100vw / 15);
+        min-width: 150px;
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    .OFlyingCard{
+        margin-top: 50px;
+    }
+}
+
+
