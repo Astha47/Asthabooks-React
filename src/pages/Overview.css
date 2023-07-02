@@ -1,0 +1,9 @@
+.Overview{
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+}
+
+.Overview::-webkit-scrollbar{
+    display: none;
+}
