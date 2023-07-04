@@ -6,25 +6,44 @@
     scrollbar-width: none; /* Firefox */
 }
 
-
 .OHeader{
     width: 100%;
     height: 200px;
     display: flex;
-    background-color: yellowgreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.OHeaderContainer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: rgba(5, 5, 72, 0.539);
+    backdrop-filter: blur(5px);
 }
 
 .OFlyingCardCont{
     width: 500px;
     height: 100%;
     display: flex;
-    background-color: brown;
 }
 
 .OHDesc{
     width: calc(100% - 500px);
     height: 100%;
-    display: block;
+    display: flex;
+}
+
+.OHTitle{
+    width: calc(100% - 60px);
+    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-size: 35pt;
+    font-weight: 600;
+    color: white;
 }
 
 .OFlyingCard{
@@ -32,7 +51,8 @@
     width: 300px;
     margin: auto;
     margin-right: 0;
-    margin-top: 100px;
+    margin-top: 50px;
+    border-radius: 5%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +68,21 @@
         height: calc(100vw * 10 / 75);
         min-height: 100px;
     }
+
+    .OHeaderContainer{
+        height: calc(100vw * 10 / 75);
+        min-height: 100px;
+    }
+
+    .OHTitle{
+        width: calc(100% - (100vw / 20));
+        margin: auto;
+        margin-bottom: calc(100vw / 75);
+        margin-left: calc(100vw * 2 / 75);
+        font-size: 3.1vw;
+        font-weight: 600;
+        color: white;
+    }
     
     .OFlyingCardCont{
         width: calc(100vw / 3);
@@ -61,7 +96,7 @@
     .OFlyingCard{
         width: calc(100vw / 5);
         height: calc(100vw * 4 / 15);
-        margin-top: calc(100vw / 15);
+        margin-top: calc(100vw / 30);
         min-width: 150px;
         min-height: 200px;
     }
@@ -69,7 +104,13 @@
 
 @media (max-width: 700px) {
     .OFlyingCard{
-        margin-top: 50px;
+        margin-top: 25px;
+    }
+
+    .OHTitle{
+        font-size: 14pt;
+        max-height: 100%;
+        overflow: hidden;
     }
 }
 
