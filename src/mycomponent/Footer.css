@@ -54,7 +54,7 @@
 .FooterSecondRow li:hover{
     color: white;
     transition: all 0.2s ease-in-out;
-    margin-left: 20px;
+    margin-left: 10px;
     font-weight: 600;
     
 }

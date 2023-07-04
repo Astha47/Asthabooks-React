@@ -14,7 +14,14 @@ function OverviewBody({Book}) {
                     </div>
                 </div>
             </div>
-            <div className="OBody"></div>
+            <div className="OBody">
+                <div className="OBSideDesc">
+
+                </div>
+                <div className="OBMainDesc">
+                    
+                </div>
+            </div>
         </div>
     );
 }
